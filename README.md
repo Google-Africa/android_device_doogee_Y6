@@ -1,24 +1,28 @@
-#                                       Device Tree for motorola Moto C (3.18.35+)
+#                                       Device Tree for DOOGEE Y6 (Kernel - 3.18.35+)
 
-The Moto C (codenamed _"namath"_) is a mid-range smartphone from motorola.
+The DOOGEE Y6 (codenamed _"Y6"_) is a mid-range smartphone from DOOGEE.
 
 Basic   | Spec Sheet
 -------:|:-------------------------
-CPU     | Quad-core 1.1 GHz Cortex-A53
-Chipset | MediaTek MT6737
-GPU     | Mali-T720
-Memory  | 1GB RAM
-Shipped Android Version | 7.0
+CPU     | Octa-core 1.3 GHz Cortex-A53 (4x1.5GHz+4x1.0GHz)
+Chipset | MediaTek MT6750
+GPU     | Mali-T860
+Memory  | 2GB RAM
+Android | 6.0
+Latest  | 7.0
 Storage | 16GB
 MicroSD | Up to 32GB
-Battery | Li-Pol 2350mAh battery
-Display | 5.0 inches
-Camera  | Main 5MP / Front 2MP, autofocus, LED flash
+Battery | Li-Pol 3200mAh battery
+Display | 5.5 inches
+Camera  | Main 13MP / Front 8MP, autofocus, LED flash
 
 Copyright 2017 - The LineageOS Project.
-Thanks to olegsvs, danielhk, Zormax, xcore995, SRT.
+Thanks to olegsvs, danielhk, Zormax, xcore995, SRT, Mysteryagr.
 
 ### Working:
+- ...
+
+### Not Working:
 - [x] Wifi
 - [x] Sound
 - [x] LiveDisplay
