@@ -7,7 +7,7 @@ PRODUCT_RELEASE_NAME := Y6
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
 
 # Inherit device configuration
-$(call inherit-product, device/doogee/Y6/device_namath.mk)
+$(call inherit-product, device/doogee/Y6/device_Y6.mk)
 
 TARGET_SCREEN_HEIGHT := 1280
 TARGET_SCREEN_WIDTH := 720
