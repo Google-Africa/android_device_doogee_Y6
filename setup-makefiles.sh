@@ -1,7 +1,7 @@
 #!/bin/bash
 
-DEVICE=namath
-VENDOR=motorola
+DEVICE=Y6
+VENDOR=doogee
 
 OUTDIR=vendor/$VENDOR/$DEVICE
 MAKEFILE=../../../$OUTDIR/$DEVICE-vendor-blobs.mk
@@ -125,8 +125,9 @@ LOCAL_PATH := \$(call my-dir)
 include \$(CLEAR_VARS)
 LOCAL_MODULE := libdpframework
 LOCAL_MODULE_OWNER := \$VENDOR
-LOCAL_SRC_FILES := proprietary/lib/libdpframework.so
-LOCAL_MODULE_TAGS := optional
+LOCAL_SRC_FILES_32 := proprietary/lib/libdpframework.so
+LOCAL_SRC_FILES_64 := proprietary/lib64/libdpframework.soLOCAL_MODULE_TAGS := optional
+LOCAL_MULTILIB := both
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
 LOCAL_MODULE_PATH := \$(TARGET_OUT_SHARED_LIBRARIES)
