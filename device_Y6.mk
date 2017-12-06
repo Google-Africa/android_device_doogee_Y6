@@ -2,12 +2,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-LOCAL_PATH := device/motorola/namath
+LOCAL_PATH := device/doogee/Y6
 
-$(call inherit-product-if-exists, vendor/motorola/namath/namath-vendor.mk)
+$(call inherit-product-if-exists, vendor/doogee/Y6/Y6-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/motorola/namath/overlay
-PRODUCT_PACKAGE_OVERLAYS += device/motorola/namath/overlay # enable this to be able overlay a default wallpaper
+DEVICE_PACKAGE_OVERLAYS += device/doogee/Y6/overlay
+PRODUCT_PACKAGE_OVERLAYS += device/doogee/Y6/overlay # enable this to be able overlay a default wallpaper
 
 # Dalvik/HWUI
 $(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
@@ -20,7 +20,7 @@ PRODUCT_AAPT_CONFIG := normal xhdpi xxhdpi
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 PRODUCT_DEFAULT_LANGUAGE := en
-PRODUCT_DEFAULT_REGION   := EG
+PRODUCT_DEFAULT_REGION   := US
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -73,15 +73,14 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/init.project.rc:root/init.project.rc \
     $(LOCAL_PATH)/rootdir/init.modem.rc:root/init.modem.rc \
-    $(LOCAL_PATH)/rootdir/ueventd.mt6735.rc:root/ueventd.mt6735.rc \
-    $(LOCAL_PATH)/rootdir/init.mt6735.usb.rc:root/init.mt6735.usb.rc \
-    $(LOCAL_PATH)/rootdir/init.mt6735.rc:root/init.mt6735.rc \
-    $(LOCAL_PATH)/rootdir/fstab.mt6735:root/fstab.mt6735 \
+    $(LOCAL_PATH)/rootdir/ueventd.mt6755.rc:root/ueventd.mt6755.rc \
+    $(LOCAL_PATH)/rootdir/init.mt6755.usb.rc:root/init.mt6755.usb.rc \
+    $(LOCAL_PATH)/rootdir/init.mt6755.rc:root/init.mt6755.rc \
+    $(LOCAL_PATH)/rootdir/fstab.mt6755:root/fstab.mt6755 \
     $(LOCAL_PATH)/rootdir/enableswap.sh:root/enableswap.sh \
     $(LOCAL_PATH)/rootdir/init.rc:root/init.rc \
     $(LOCAL_PATH)/rootdir/sbin/busybox:root/sbin/busybox \
-    $(LOCAL_PATH)/rootdir/init.microtrust.rc:root/init.microtrust.rc \
-    $(LOCAL_PATH)/rootdir/init.connectivity.rc:root/init.connectivity.rc \
+    $(LOCAL_PATH)/rootdir/init.connectivity.rc:root/init.connectivity.rc
 
 # Audio
 PRODUCT_PACKAGES += \
@@ -160,7 +159,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.kernel.android.checkjni=0
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-	persist.sys.usb.config=mtp
+	persist.sys.usb.config=mtp,adb
 
 # Keyhandler package
 PRODUCT_PACKAGES += \
