@@ -1,6 +1,7 @@
 # inherit from the proprietary version
 -include vendor/doogee/Y6/BoardConfigVendor.mk
 
+DEVICE_PATH := device/doogee/Y6
 
 # Disable NINJA
 #USE_NINJA := false
