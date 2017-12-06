@@ -8,8 +8,8 @@ CPU     | Octa-core 1.3 GHz Cortex-A53 (4x1.5GHz+4x1.0GHz)
 Chipset | MediaTek MT6750
 GPU     | Mali-T860
 Memory  | 2GB RAM
-Android | 6.0
-Latest  | 7.0
+Shipped Android | 6.0
+Latest Update | 7.0
 Storage | 16GB
 MicroSD | Up to 32GB
 Battery | Li-Pol 3200mAh battery
